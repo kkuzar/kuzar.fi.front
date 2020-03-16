@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+    commands:
+      - echo Check Node 12...
+      - node -v
+  pre_build:
+    commands:
+      - echo Installing dependencies...
+      - npm install
+  build:
+    commands:
+      - echo Building...
+      - gatsby build
+artifacts:
+  files:
+    - "**/*"
+  discard-paths: no
+  base-directory: public
