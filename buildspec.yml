@@ -10,11 +10,15 @@ phases:
   pre_build:
     commands:
       - echo Installing dependencies...
+      - npm install -g gatsby-cli
+      - gatsby -v
       - npm install
+      - echo Fixing audit.
+      - npm audit fix --force
   build:
     commands:
       - echo Building...
-      - gatsby build
+      - npm run build
 artifacts:
   files:
     - "**/*"
