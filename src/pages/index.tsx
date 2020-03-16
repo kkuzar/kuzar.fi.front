@@ -10,6 +10,7 @@ class IndexPage extends React.PureComponent<{}, {}> {
         <h1>Coming Soon!</h1>
         <p>This site still under construction ,</p>
         <p>Using AWS serverless + Django for backend and Gatsby + React + TS stack for Frontend.</p>
+        <p>Estimate: by end of April. 2020</p>
         {/*<Link to="/page-2/">Go to page 2</Link>*/}
       </Layout>
     );
